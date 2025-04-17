@@ -1,0 +1,161 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and Main Styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Black background */
+    color: #f0f0f0; /* Light text */
+    line-height: 1.6;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #1e1e1e;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  header h1 {
+    color: #9c27b0; /* Futuristic purple */
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #9c27b0; /* Futuristic purple */
+  }
+  
+  nav ul li a.active {
+    font-weight: bold;
+  }
+  
+  /* Main Section */
+  main {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #9c27b0; /* Futuristic purple */
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  /* Character Cards */
+  .characters-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .character-card {
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .character-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.8);
+  }
+  
+  .character-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #9c27b0;
+  }
+  
+  .character-info {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .character-info h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .character-info p {
+    color: #9c27b0;
+    font-size: 1.2rem;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #1e1e1e;
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  footer p {
+    color: #f0f0f0;
+    font-size: 1rem;
+  }
+  
+  /* Glowing Button Animations */
+  nav ul li a:hover {
+    animation: glow 1.5s infinite alternate;
+  }
+  
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 10px #9c27b0, 0 0 20px #9c27b0, 0 0 30px #9c27b0;
+    }
+    100% {
+      text-shadow: 0 0 20px #9c27b0, 0 0 40px #9c27b0, 0 0 60px #9c27b0;
+    }
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2.5rem;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  
+    .characters-container {
+      flex-direction: column;
+    }
+  }
+  
